@@ -1,6 +1,6 @@
 # WiseTraveler
 
-CS 410 Team Yellow Group Project
+CS 411 Team Yellow Group Project
 
 All major files have been moved to the docs folder to support the deployment
 
