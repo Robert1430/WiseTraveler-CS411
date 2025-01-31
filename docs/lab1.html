@@ -7,7 +7,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="globals.css" />
-    <link rel="stylesheet" type="text/css" href="user-story.css" />
+    <link rel="stylesheet" type="text/css" href="presentations.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".clickable-row").forEach(row => {
+                row.addEventListener("click", function () {
+                    let targetId = this.getAttribute("data-target");
+                    let pdfRow = document.getElementById(targetId);
+
+                    // Toggle the visibility of the selected PDF row
+                    if (pdfRow.style.display === "table-row") {
+                        pdfRow.style.display = "none";
+                    } else {
+                        // Hide all other PDF rows before showing the new one
+                        document.querySelectorAll(".pdf-row").forEach(row => row.style.display = "none");
+                        pdfRow.style.display = "table-row";
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <!-- Body -->
@@ -53,7 +72,23 @@
     </div>
 
     <div class="lab">
-        <h3>Lab 1 Draft</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lab 1 Draft</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" data_target="pdf1">
+                    <td>Dylan Montgomery</td>
+                </tr>
+                <tr id="pdf1" class="pdf-row">
+                    <td colspan="2">
+                        <iframe src="" width="100%" height="400px"></iframe> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         
     </div>
 </body>
