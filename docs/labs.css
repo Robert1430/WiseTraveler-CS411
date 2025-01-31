@@ -5,18 +5,18 @@
     align-self: center;
 }
 
-table {
+.lab table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
+.lab th, .lab td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
 
-th {
+.lab th {
     background-color: #333;
     color: white;
     width: auto;
