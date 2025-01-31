@@ -1,0 +1,43 @@
+/* Table Styling */
+.lab {
+    overflow-x: auto;
+    max-width: 100%;
+    align-self: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    width: auto;
+}
+
+/* Clickable Row */
+.clickable-row {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.clickable-row:hover {
+    background-color: #ddd;
+}
+
+/* Hide PDF rows initially */
+.pdf-row {
+    display: none;
+}
+
+/* Animation for smooth expanding effect */
+.pdf-row iframe {
+    transition: max-height 0.3s ease-in-out;
+}
