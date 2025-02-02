@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255; /* Light White Background */
+  --background-end-rgb: 255, 255, 255;   /* Slightly Off-White */
+
+  --header-bg-light: 227, 242, 253; /* Light Blue Header */
+  --header-text-light: 0, 0, 0; /* Dark text for contrast */
+
+  --header-bg-dark: 25, 118, 210; /* Dark Blue Header */
+  --header-text-dark: 240, 240, 240; /* Light text for contrast */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 240, 240, 240;
+    --background-start-rgb: 30, 30, 30;
+    --background-end-rgb: 45, 45, 45;
+
+    --header-bg-light: var(--header-bg-dark);
+    --header-text-light: var(--header-text-dark);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  /* Header */
+  .header {
+    background-color: rgb(var(--header-bg-light));
+    color: rgb(var(--header-text-light));
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Light Grey Shadow for Forms */
+  .form-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Input Fields */
+  .form-input {
+    @apply block w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset 
+      ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 
+      sm:text-sm sm:leading-6;
+  }
+
+  /* Primary Buttons - Dark Blue */
+  .btn-primary {
+    @apply flex w-full justify-center rounded-full bg-blue-900 px-3 py-1.5 text-sm font-semibold 
+      text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 
+      focus-visible:outline-offset-2 focus-visible:outline-blue-900;
+  }
+
+  /* Authentication Box */
+  .auth-box {
+    @apply bg-white shadow-lg rounded-lg p-8 sm:max-w-sm w-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
