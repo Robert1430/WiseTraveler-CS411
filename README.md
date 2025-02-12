@@ -1,7 +1,7 @@
 # WiseTraveler
 
-CS 411 Team Yellow Group Project
+CS 411 Team Yellow Group Project - Spring 2025
 
-All major files have been moved to the docs folder to support the deployment
+This is the repository for the team presentation website. All major files have been moved to the docs folder to support the deployment.
 
 The deployed page can be viewed here https://robert1430.github.io/WiseTraveler-CS411/
