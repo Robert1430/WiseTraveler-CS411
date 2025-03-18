@@ -1,43 +1,44 @@
-/* Table Styling */
 .lab {
-    overflow-x: auto;
-    max-width: 100%;
+    width: 80%;
     align-self: center;
+    
 }
 
-.lab table {
-    width: 100%;
-    border-collapse: collapse;
+h3 {
+    font-size: 32pt;
+    text-align: center;
+    margin: 0 15px;
 }
 
-.lab th, .lab td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
 
-.lab th {
-    background-color: #333;
-    color: white;
-    width: auto;
-}
+/* 
+* Collapsible accordion code from W3Schools
+* https://www.w3schools.com/howto/howto_js_accordion.asp
+*/
 
-/* Clickable Row */
-.clickable-row {
-    background-color: #f9f9f9;
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
     cursor: pointer;
-}
-
-.clickable-row:hover {
-    background-color: #ddd;
-}
-
-/* Hide PDF rows initially */
-.pdf-row {
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .lab .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
     display: none;
-}
-
-/* Animation for smooth expanding effect */
-.pdf-row iframe {
-    transition: max-height 0.3s ease-in-out;
-}
+    overflow: hidden;
+  } 
