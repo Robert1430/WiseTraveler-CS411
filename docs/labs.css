@@ -1,13 +1,14 @@
 .lab {
     width: 80%;
     align-self: center;
-    
+    min-height: 500px;
+    margin: 10px 0;
 }
 
 h3 {
     font-size: 32pt;
     text-align: center;
-    margin: 0 15px;
+    margin: 10px 0;
 }
 
 
