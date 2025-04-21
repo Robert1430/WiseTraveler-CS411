@@ -12,6 +12,18 @@ h3 {
 }
 
 
+/*
+* Button Styling for lab 3 & 4
+*/
+.lab3 {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
 /* 
 * Collapsible accordion code from W3Schools
 * https://www.w3schools.com/howto/howto_js_accordion.asp
