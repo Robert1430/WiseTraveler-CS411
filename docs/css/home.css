@@ -1,0 +1,46 @@
+/* Style for headings */
+.summary h2 {
+    font-size: 36px;      /* Set heading font size to 36px */
+    margin-bottom: 10px;  /* Space between heading and content */
+}
+
+.summary h3 {
+    font-size: 20px;
+}
+
+/* General styling for summary text */
+.summary p {
+    margin: 10px 30px;            
+    font-size: 16px;           
+    font-weight: normal;
+}
+
+/* Style for the list items */
+.summary ul {
+    padding-left: 30px;    /* Indent the list */
+    margin: 0 30px;             /* Remove default margin */
+}
+
+/* Style for embedded list items */
+.summary .embedded {
+    padding-left: 60px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* Add spacing between each bullet point */
+.summary li {
+    margin-bottom: 10px;    /* Space between bullet points */
+}
+
+/* Make the summary headers bold */
+.summary p b {
+    font-weight: bold;
+}
+
+#content {
+    align-content: center;
+    margin: 10px 50px;
+}
+
+
