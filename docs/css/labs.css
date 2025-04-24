@@ -3,6 +3,8 @@
     align-self: center;
     min-height: 30px;
     margin: 10px 0;
+    justify-content: center;;
+    
 }
 
 h3 {
@@ -16,7 +18,7 @@ h3 {
 * Button Styling for lab 3 & 4
 */
 .lab3 {
-    width: 60%;
+    width: 80%;
     height: 56px;
     text-align: center;
     background-color: #eee;
