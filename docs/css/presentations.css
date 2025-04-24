@@ -9,6 +9,16 @@
     height: auto;
 }
 
+.image_window {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+img {
+    width: 100%;
+}
+
 .google-slides {
     width: 100%;
     height: 500px;
