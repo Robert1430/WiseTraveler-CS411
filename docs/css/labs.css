@@ -1,7 +1,7 @@
 .lab {
     width: 80%;
     align-self: center;
-    min-height: 300px;
+    min-height: 30px;
     margin: 10px 0;
 }
 
@@ -16,11 +16,12 @@ h3 {
 * Button Styling for lab 3 & 4
 */
 .lab3 {
-    width: 100%;
-    height: 40px;
+    width: 60%;
+    height: 56px;
     text-align: center;
     background-color: #eee;
     font-size: 20px;
+    border: none;
 }
 
 
@@ -44,7 +45,7 @@ h3 {
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .lab .active, .accordion:hover {
+  .lab .active, .accordion:hover, .lab3:hover {
     background-color: #ccc;
   }
   
