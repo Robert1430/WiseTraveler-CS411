@@ -3,9 +3,6 @@
     align-self: center;
     min-height: 30px;
     margin: 10px 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -15,12 +12,19 @@ h3 {
     margin: 10px 0;
 }
 
+/*
+* Container that holds the button for lab 3
+*/
+.button_container {
+    display: flex;
+    margin: 0 auto;
+}
 
 /*
 * Button Styling for lab 3 & 4
 */
 .lab3 {
-    width: 80%;
+    width: 100%;
     min-width: 300px;
     height: 56px;
     text-align: center;
